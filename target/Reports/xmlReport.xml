@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="47.728">
-    <testcase classname="login feature" name="login with existing account" time="45.887">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.842">
+    <testcase classname="login feature" name="login with existing account" time="19.359">
         <system-out><![CDATA[Given open browser..........................................................passed
 And navigate to "https://en-gb.facebook.com/reg/"...........................passed
 And verify if navigated to "https://en-gb.facebook.com/reg/" by get current url.passed

@@ -15,6 +15,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class steps extends variable{
     
@@ -24,7 +25,8 @@ public class steps extends variable{
         wait = new WebDriverWait(driver, Duration.ofMinutes(2));
         locator = new locator(driver, wait);
 
-        System.getProperty("webdriver.chrome.driver", "/home/evan/Documents/MavenProjects/sqa_testing/src/test/Resource/Drivers/chromedriver");
+        WebDriverManager.chromedriver().setup();
+        // System.getProperty("webdriver.chrome.driver", "/home/evan/Documents/MavenProjects/sqa_testing/src/test/Resource/Drivers/chromedriver");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         driver.manage().window().maximize();
